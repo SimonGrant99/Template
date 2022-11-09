@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { HeaderButton } from "../../components/MUI/HeaderButton";
+import { NavButton } from "../../components/MUI/NavButton";
 import { PageRoutes } from "../../models/PageRoutes";
 import logo from "../../resources/logo.png";
 
@@ -86,9 +87,9 @@ export function HomePage(): React.ReactElement {
             variant="outlined"
           />
 
-          <HeaderButton onClick={navigateToListingPage}> Listings</HeaderButton>
-          <HeaderButton onClick={navigateToUserPage}>User</HeaderButton>
-          <HeaderButton onClick={navigateToCheckoutPage}>Checkout</HeaderButton>
+          <NavButton onClick={navigateToListingPage}> Listings</NavButton>
+          <NavButton onClick={navigateToUserPage}>User</NavButton>
+          <NavButton onClick={navigateToCheckoutPage}>Checkout</NavButton>
         </div>
       </div>
     </div>
