@@ -7,6 +7,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { ListingPage } from "./pages/ListingPage/ListingPage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 import { SignupPage } from "./pages/SignupPage/SignupPage";
+import backgroundVideo from "./resources/background.mp4";
 
 /**
  * The primary component for the web app.
@@ -14,28 +15,20 @@ import { SignupPage } from "./pages/SignupPage/SignupPage";
 export function App(): React.ReactElement {
   return (
     <div className={styles.app}>
-      {/* <video
-        aria-label="test"
+      {/* Background Video */}
+      <video
         autoPlay={true}
         loop={true}
         muted={true}
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50%",
-          height: "100%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: "-1",
-        }}
+        className={styles.backgroundVideo}
       >
         <source
           src={backgroundVideo}
           type="video/mp4"
         />
-      </video> */}
+      </video>
 
+      {/* Routes */}
       <Routes>
         <Route
           element={<HomePage />}
