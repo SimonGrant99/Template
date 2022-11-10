@@ -87,9 +87,9 @@ export function HomePage(): React.ReactElement {
             variant="outlined"
           />
 
-          <NavButton onClick={navigateToListingPage}> Listings</NavButton>
-          <NavButton onClick={navigateToUserPage}>User</NavButton>
-          <NavButton onClick={navigateToCheckoutPage}>Checkout</NavButton>
+          <NavButton onClick={navigateToListingPage}> ALL LISTINGS</NavButton>
+          <NavButton onClick={navigateToUserPage}>MY LISTINGS</NavButton>
+          <NavButton onClick={navigateToCheckoutPage}>CHECKOUT</NavButton>
         </div>
       </div>
     </div>
